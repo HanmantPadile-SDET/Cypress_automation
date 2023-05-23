@@ -1,6 +1,7 @@
 # Cypress_automation
 Cypress web automation and API testing 
 Practice Repo for cypress.
+
 1.install node
 3.npm -i init --> create package.json file
 2.npm install cypress --save -dev
