@@ -58,6 +58,14 @@ Cypress.Commands.add('LoginApp', (email, password) => {
 
 
     cy.get(txtUsername).type(email);
-    cy.get(txtPassword).type(password)
+    cy.get(txtPassword).type(password);
     cy.get(btnSubmit).click();
+})
+
+Cypress.Commands.add('AddProduct',(locator,productname,btnlocator)=>{
+    cy.get(locator).each(($el,index,$list)=>{
+        if($el.text().includes(productname)){
+            cy.get(btnlocator).eq(index).click();
+        }
+    })
 })
