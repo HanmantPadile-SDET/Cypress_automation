@@ -75,7 +75,7 @@ describe('Ecommerce Framework ',()=>{
             expect(sum).to.equal(Number(expAmount));
         })
         
-        cy.pause();
+        // cy.pause();
         checkoutpage.checkout().click();
         checkoutpage.getCountry().type('India');
         cy.wait(2000);

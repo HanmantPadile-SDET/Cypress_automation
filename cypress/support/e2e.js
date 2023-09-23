@@ -22,3 +22,6 @@ import './commands'
 require ('cypress-xpath')
 import 'cypress-mochawesome-reporter/register';
 require('cypress-file-upload');
+
+import sqlServer from 'cypress-sql-server';
+sqlServer.loadDBCommands();

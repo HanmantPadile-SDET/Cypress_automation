@@ -69,3 +69,19 @@ Cypress.Commands.add('AddProduct',(locator,productname,btnlocator)=>{
         }
     })
 })
+
+Cypress.Commands.add('LoginShop',()=>{
+    cy.request({
+        method:'POST',
+        url:'https://rahulshettyacademy.com/client/',
+        payload:{
+            "email": "hanmant.padile@example.com",
+            "password": "Test@123"}
+
+    }).then((response)=>{
+        expect(response.status).to.equal(200);
+        Cypress.env('token',response.body.token);
+       
+    })
+})
+
