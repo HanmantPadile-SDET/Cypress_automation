@@ -1,5 +1,7 @@
 # name: Regression End-to-End Test
-# on: push
+# on: schedule
+# # Runs at 4:30 PM UTC every day
+#     - cron: '30 16 * * *'
 # jobs:
 #   cypress-run:
 #     runs-on: ubuntu-latest
@@ -12,9 +14,3 @@
 #         uses: cypress-io/github-action@v6
 #         with:
 #          command: npm run headtest
-        
-
-
-
-
-
