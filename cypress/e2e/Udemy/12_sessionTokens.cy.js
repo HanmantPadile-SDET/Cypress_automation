@@ -61,7 +61,5 @@ describe('Login using session token', () => {
             expect(productName).to.equal(actualProductCSV)
         })
 
-        
-
     })
 })

@@ -17,7 +17,7 @@ describe('web tables', () => {
 
     it('data in particular cell',()=>{
         cy.get("table.table.table-bordered.table-hover>tbody>tr:nth-child(4)>td:nth-child(3)").contains('gorankrezic90@gmail.com');
-
+ 
     })
 
     it('read all the rows',()=>{

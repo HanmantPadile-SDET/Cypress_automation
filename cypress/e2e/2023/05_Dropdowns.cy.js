@@ -18,8 +18,6 @@ describe('Hanling dropdowns',()=>{
         cy.visit('https://www.wikipedia.org/');
         cy.get('#searchInput').type('Delhi');
         cy.get('#suggestion-title').contains('Delhi University').click();
-
-        
     })
 
     it.only('dropdown dynamic ',()=>{
@@ -33,7 +31,7 @@ describe('Hanling dropdowns',()=>{
         })
 
         cy.get(`[name='q']`).should('have.value','cypress automation tool')
-        
+
         
     })
 })

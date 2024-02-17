@@ -8,7 +8,7 @@ describe("post user post api call",()=>{
     it("First post api-users",()=>{
         var pattern='ABCDEFGHIJKLMNOPQRSTUVWYYZabcdefghijklmnopqrstuvwxyz'
         for(var i=0;i<10;i++){
-            random_text +=pattern.charAt(Math,floor(Math.random()+pattern.length))
+            random_text +=pattern.charAt(Math.floor(Math.random()+pattern.length))
         }
 
         // cy.fixture('post.json').then((payload)=>{

@@ -29,7 +29,4 @@ describe("This is simple get call",()=>{
         })
     })
 
-
-
-
 })

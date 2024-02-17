@@ -1,6 +1,6 @@
 describe('Assertions Demo',()=>{
     it('implicit assertions',()=>{
-        //implicit assetions = expect,and
+        //implicit assetions = should,and
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
         cy.url().should('include','orange');
         cy.url().should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
@@ -8,7 +8,7 @@ describe('Assertions Demo',()=>{
     })
 
     it('implicit assertions-with chaining',()=>{
-        //implicit assetions = expect,and
+        //implicit assetions = should,and
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
         cy.url().should('include','orange')
         .should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')

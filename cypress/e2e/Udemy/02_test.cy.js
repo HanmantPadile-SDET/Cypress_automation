@@ -24,7 +24,5 @@ describe('My first test',()=>{
         cy.get('.cart-icon > img').click();
         cy.contains('PROCEED TO CHECKOUT').click();
         cy.contains('Place Order').click();
-
-
     })
 })

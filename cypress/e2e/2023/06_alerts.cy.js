@@ -33,7 +33,7 @@ describe('handling alerts',()=>{
     it('prompt alert',()=>{
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts');
         cy.window().then((win)=>{
-            cy.stub(win,'promp').returns('welcome');
+            cy.stub(win,'prompt').returns('welcome');
         })
         cy.get(`button[onclick='jsPrompt()']`).click();
         //cypress automatically close using okay

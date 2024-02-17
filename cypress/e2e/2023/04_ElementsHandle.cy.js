@@ -16,7 +16,7 @@ describe('Handle UI elements',()=>{
         .should('not.be.checked')
     })
 
-    it('handle checkboxed',()=>{
+    it('handle checkboxes',()=>{
         cy.visit('https://itera-qa.azurewebsites.net/home/automation');
         cy.get('#monday').should('be.visible')
         .check()
@@ -28,7 +28,7 @@ describe('Handle UI elements',()=>{
         .should('not.be.checked');
     })
 
-    it('handle multi checkboxed',()=>{
+    it('handle multi checkboxes',()=>{
         cy.visit('https://itera-qa.azurewebsites.net/home/automation');
         cy.get(`input.form-check-input[type='checkbox']`).check()
         .should('be.checked');

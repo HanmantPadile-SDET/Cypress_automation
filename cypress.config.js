@@ -28,7 +28,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectId: "gq62b5",
+  projectId: "4qbvwa",
   reporter: 'cypress-mochawesome-reporter', //for html report
   env:{
       url:"https://rahulshettyacademy.com",

@@ -48,7 +48,5 @@ describe('mocking api response', () => {
 
         cy.wait('@dummyurl')
 
-    
-
     })
 })

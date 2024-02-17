@@ -11,8 +11,7 @@ describe('Child tab scenarions',()=>{
 
     it('handle child tab-aaproach 2',()=>{
         cy.visit("https://the-internet.herokuapp.com/windows")//parent
-        //we need to change attribute "target" so that href open in same tab
-        //to manupulate attribute cy.invoke
+        //get the href attribute value and visit
         cy.get(`.example a `).then((el)=>{
             let url=el.prop('href');
             cy.visit(url)

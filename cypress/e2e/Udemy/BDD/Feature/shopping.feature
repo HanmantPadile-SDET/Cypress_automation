@@ -14,7 +14,7 @@ Then Select country and submit the order should be success
 @smoke
 Scenario: Filling the form to shop
 Given User in on home page
-When User fills form details
+When User clicks on shop
     |name  | gender   |
     |bob   | Female   |
 
